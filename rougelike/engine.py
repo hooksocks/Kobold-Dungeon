@@ -60,8 +60,12 @@ class Engine:
 
         render_functions.render_bar(
             console=console,
-            current_value=self.player.fighter.hp,
-            maximum_value=self.player.fighter.max_hp,
+            current_hp=self.player.fighter.hp,
+            current_mp=self.player.fighter.mp,
+            maximum_hp=self.player.fighter.max_hp,
+            maximum_mp=self.player.fighter.max_mp,
+            current_exp=self.player.level.current_xp,
+            maximum_exp=self.player.level.level_up_base + self.player.level.current_level * self.player.level.level_up_factor,
             total_width=20,
         )
 

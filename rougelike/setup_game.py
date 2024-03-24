@@ -89,7 +89,7 @@ class MainMenu(input_handlers.BaseEventHandler):
         console.print(
             console.width // 2,
             console.height - 2,
-            "By Jackie, Val and Zo?",
+            "By Jackie, Valerie and Zoe",
             fg=color.menu_title,
             alignment=tcod.CENTER,
         )
